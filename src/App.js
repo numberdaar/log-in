@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function LoginPage() {
+function App() {
   // Define state variables for username, password, error message, and form submission status
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -62,4 +62,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default App;
