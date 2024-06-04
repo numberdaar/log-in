@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 
 function App() {
-  // Define state variables for username, password, error message, and form submission status
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Simple validation for demonstration purposes
     if (username === "user" && password === "password") {
       setError("");
       setIsSubmitted(true);
